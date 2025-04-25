@@ -3,159 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | SEKOU DIGITALZ TECH</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>SEKOU DIGITALZ TECH | Web Development & Digital Solutions</title>
+    <style>
+        /* Embedded CSS (normally in style.css) */
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --light-color: #ecf0f1;
+            --dark-color: #2c3e50;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        /* Add all other CSS styles from previous style.css here */
+    </style>
 </head>
 <body>
-    <!-- Header/Navigation -->
+    <!-- Header with Base64 Logo -->
     <header>
         <div class="container">
             <div class="logo">
-                <a href="index.html">
-                    <img src="https://via.placeholder.com/200x100/2c3e50/ffffff?text=SEKOU+DIGITALZ+TECH" alt="SEKOU DIGITALZ TECH Logo">
+                <a href="#">
+                    <!-- Embedded SVG Logo -->
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMTAwIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMmMzZTUwIi8+PHRleHQgeD0iNTAlIiB5PSI1NSUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyNCIgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+U0VLT1UgRElHSVRBTFogVEVDSDwvdGV4dD48L3N2Zz4=" alt="Logo">
                     <span>SEKOU DIGITALZ TECH</span>
                 </a>
             </div>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html#services">Services</a></li>
-                    <li><a href="index.html#portfolio">Portfolio</a></li>
-                    <li><a href="about.html" class="active">About</a></li>
-                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
-                <div class="mobile-menu">
-                    <i class="fas fa-bars"></i>
-                </div>
             </nav>
         </div>
     </header>
 
-    <!-- About Hero -->
-    <section class="about-hero">
+    <!-- Hero Section with Embedded Background -->
+    <section class="hero" style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAIBAQIBAQICAgICAgICAwUDAwMDAwYEBAMFBwYHBwcGBwcICQsJCAgKCAcHCg0KCgsMDAwMBwkODw0MDgsMDAz/2wBDAQICAgMDAwYDAwYMCAcIDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAz/wAARCABkAGQDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD5rooor8jP9oAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD//2Q==') center/cover;">
         <div class="container">
-            <h1>About SEKOU DIGITALZ TECH</h1>
-            <p>Learn more about our mission, vision, and the team behind your digital success.</p>
+            <h1>Innovative Digital Solutions for Your Business</h1>
+            <p>We create stunning websites, mobile apps, and digital strategies to help your business thrive online.</p>
+            <a href="#contact" class="btn">Get Started</a>
         </div>
     </section>
 
-    <!-- About Content -->
-    <section class="about-content">
+    <!-- Services with Embedded Images -->
+    <section id="services">
         <div class="container">
-            <div class="about-section">
-                <h2>Our Story</h2>
-                <p>Founded in 2020, SEKOU DIGITALZ TECH began as a small team of passionate developers and designers with a vision to help businesses establish a strong online presence. Today, we've grown into a full-service digital agency serving clients across various industries.</p>
-                <p>Our journey has been marked by innovation, dedication, and a relentless pursuit of excellence in everything we do.</p>
-            </div>
-            
-            <div class="about-section">
-                <h2>Our Mission</h2>
-                <p>To empower businesses with cutting-edge digital solutions that drive growth, enhance customer engagement, and simplify operations through technology.</p>
-            </div>
-            
-            <div class="about-section">
-                <h2>Our Values</h2>
-                <div class="values-grid">
-                    <div class="value-card">
-                        <i class="fas fa-lightbulb"></i>
-                        <h3>Innovation</h3>
-                        <p>We constantly explore new technologies and approaches to deliver the best solutions.</p>
-                    </div>
-                    <div class="value-card">
-                        <i class="fas fa-handshake"></i>
-                        <h3>Integrity</h3>
-                        <p>Honest communication and ethical practices are at the core of our business.</p>
-                    </div>
-                    <div class="value-card">
-                        <i class="fas fa-users"></i>
-                        <h3>Collaboration</h3>
-                        <p>We work closely with our clients to understand their unique needs and goals.</p>
-                    </div>
-                    <div class="value-card">
-                        <i class="fas fa-star"></i>
-                        <h3>Excellence</h3>
-                        <p>We strive for perfection in every project we undertake.</p>
-                    </div>
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MDAiIGhlaWdodD0iNDAwIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMmMzZTUwIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyNCIgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+V2ViIERldmVsb3BtZW50PC90ZXh0Pjwvc3ZnPg==" alt="Web Development">
+                    <h3>Web Development</h3>
+                    <p>Custom websites and web applications tailored to your business needs.</p>
                 </div>
-            </div>
-            
-            <div class="about-section team-section">
-                <h2>Meet The Team</h2>
-                <div class="team-grid">
-                    <div class="team-member">
-                        <img src="https://via.placeholder.com/200" alt="Team Member">
-                        <h3>Sekou Diallo</h3>
-                        <p>Founder & CEO</p>
-                    </div>
-                    <div class="team-member">
-                        <img src="https://via.placeholder.com/200" alt="Team Member">
-                        <h3>Jane Smith</h3>
-                        <p>Lead Developer</p>
-                    </div>
-                    <div class="team-member">
-                        <img src="https://via.placeholder.com/200" alt="Team Member">
-                        <h3>Mike Johnson</h3>
-                        <p>UI/UX Designer</p>
-                    </div>
-                    <div class="team-member">
-                        <img src="https://via.placeholder.com/200" alt="Team Member">
-                        <h3>Sarah Williams</h3>
-                        <p>Digital Marketer</p>
-                    </div>
-                <!-- Web Development Service -->
-                 <img src="https://via.placeholder.com/600x400/2c3e50/ffffff?                text=Web+Development" alt="Web Development">
-
-<!-- Mobile App Service -->
-                 <img src="https://via.placeholder.com/600x400/3498db/ffffff?text=Mobile+Apps" alt="Mobile App Development">
-
-<!-- SEO Service -->
-                <img src="https://via.placeholder.com/600x400/e74c3c/ffffff?text=SEO+Marketing" alt="SEO & Digital Marketing"><!-- Web Development Service -->
-<img src="https://via.placeholder.com/600x400/2c3e50/ffffff?text=Web+Development" alt="Web Development">
-
-<!-- Mobile App Service -->
-                  <img src="https://via.placeholder.com/600x400/3498db/ffffff?text=Mobile+Apps" alt="Mobile App Development">
-
-<!-- SEO Service -->
-                  <img src="https://via.placeholder.com/600x400/e74c3c/ffffff?text=SEO+Marketing" alt="SEO & Digital Marketing">
+                <!-- Add other services similarly -->
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-about">
-                    <h3>SEKOU DIGITALZ TECH</h3>
-                    <p>Providing innovative digital solutions to help businesses grow in the online world.</p>
-                </div>
-                <div class="footer-links">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="index.html#services">Services</a></li>
-                        <li><a href="index.html#portfolio">Portfolio</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="index.html#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-social">
-                    <h3>Follow Us</h3>
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2023 SEKOU DIGITALZ TECH. All Rights Reserved.</p>
-            </div>
-        </div>
-    </footer>
+    <!-- Rest of your content -->
 
-    <script src="js/script.js"></script>
+    <script>
+        // Embedded JavaScript (normally in script.js)
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile menu toggle
+            const mobileMenuBtn = document.querySelector('.mobile-menu');
+            const navMenu = document.querySelector('nav ul');
+            
+            mobileMenuBtn?.addEventListener('click', function() {
+                navMenu?.classList.toggle('show');
+            });
+        });
+    </script>
 </body>
 </html>
